@@ -1,0 +1,22 @@
+[
+    {
+        "name": "C11 CARGOWEAR",
+        "id": "5",
+        "img": "/images/arrival1.webp"
+    },
+    {
+        "name": "V1 CARGOWEAR",
+        "id": "6",
+        "img": "/images/arrival2.webp"
+    },
+    {
+        "name": "X1 CARGOWEAR",
+        "id": "7",
+        "img": "/images/arrival3.webp"
+    },
+    {
+        "name": "C50 CARGOWEAR",
+        "id": "8",
+        "img": "/images/arrival4.webp"
+    }
+]

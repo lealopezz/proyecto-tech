@@ -1,13 +1,17 @@
 var express = require('express');
 var router = express.Router();
+const api = require('../api');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res) => {
   res.render('pages/index', { title: 'Tech' });
 });
 
-router.get('/home', (req,res) => {
-  res.render('pages/home');
+router.get('/home', async (req,res) => {
+  const products = await api.getProducts();
+  const arrivals = require('../public/json/arrivals.json');
+  console.log(products);
+  res.render('pages/home', { products , arrivals });
 });
 
 router.get('/about', (req,res) => {

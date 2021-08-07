@@ -184,25 +184,26 @@ body{
   transition: all 300ms ease-in-out;
 }
 
-/* ------BEST SELLER------ */
-.best-sellers{
+/* ------PRODUCTS------ */
+.products{
   width: 90%;
   margin: auto;
   color: var(--grey);
 }
-.best-grid{
+.product-grid{
   display: grid;
   gap: 15px;
   width: 100%;
   grid-template-columns: repeat(2,1fr);
 }
-.best-title{
+.product-title{
+  font-size: 1em;
   padding: 35px 10px;
 }
-.best-item{
+.product-item{
   position: relative;
 }
-.best-bf{
+.product-bf{
   display: block;
   position: absolute;
   top: 2%;
@@ -212,10 +213,10 @@ body{
   margin: 5%;
   color:var(--grey);
 }
-.best-txt{
+.product-txt{
   font-size: 0.7em;
 }
-.best-link{
+.product-link{
   display: block;
   color: var(--grey);
   margin:5px 0;
@@ -603,8 +604,8 @@ footer{
       font-size: 1em;
       transform: translate(-50%,-50%);
   }
-  /* ---BEST SELLER */
-  .best-grid , .arrivals-grid, .footer-grid{
+  /* ---product SELLER */
+  .product-grid , .arrivals-grid, .footer-grid{
       grid-template-columns: repeat(4,1fr);
   }
   .features-flex{
@@ -637,7 +638,7 @@ footer{
   .header_txt{
       height: 10px;
   }
-  .best-title{
+  .product-title{
       padding: 20px 5px;
   }
   .features-flex{
