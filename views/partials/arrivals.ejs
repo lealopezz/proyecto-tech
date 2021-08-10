@@ -1,0 +1,16 @@
+<section class="new-arrivals">
+    <ul class="arrivals-grid">
+        <% arrivals.forEach(arrival => { %>
+            <li class="arrival">
+                <a href="/product/<%= arrival.id %>">                
+                    <img src="<%= arrival.img %>" alt="<%= arrival.name %> image" class="arrival-img">
+                    <div class="arrival-content">
+                        <p>NEW ARRIVAL</p>
+                        <h2><%= arrival.name %></h2>
+                        <a href="/product/<%= arrival.id %>" class="arrival-link">SHOP NOW</a>
+                    </div>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+</section>

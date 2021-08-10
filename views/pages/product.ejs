@@ -1,0 +1,54 @@
+<%- include('../partials/header') %>
+<body>
+    <%- include('../partials/nav') %>
+    <div class="product">
+        <img src="<%= product.img %>" alt="<%= product.name %> image">
+        <div class="product-info">
+            <h1><%= product.name %></h1>
+            <h2><%= product.color %></h2>
+            <h3>$ <%= product.price %></h3>
+            <label>
+                <select class="product-size">
+                    <% product.sizes.forEach(size => { %>
+                        <% if(size.stock > 0){ %>
+                            <option><%= size.size %></option>
+                        <% } %>
+                    <% }) %>
+                </select>
+                <button action="/javascripts/main.js" class="product-btn">ADD TO CART</button>
+            </label>
+
+        </div>
+    </div>
+
+    <!-- <p class="product-desc"><%= product.desc %></p> -->
+
+    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aliquam obcaecati veniam numquam odio cumque ipsa repellendus, magnam error quas, vel sunt ipsum soluta aperiam velit dolores neque dicta fuga?</p>
+    
+    <%- include('../partials/arrivals') %>
+
+    <%- include('../partials/features') %>
+    
+    <section class="social">
+        <div class="social-flex">
+            <a href="#" class="social-item">
+                <i class="fab fa-facebook"></i>                
+            </a>
+            <a href="#" class="social-item">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-item">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-item">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <%- include('../partials/footer') %>
+        
+    <script src="/javascripts/main.js"></script>
+    </body>
+    </html>

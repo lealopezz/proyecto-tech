@@ -26,4 +26,8 @@ for(let i=0;i<subMenuBtn.length;i++){
             }
         }
     })
-}
+};
+
+searchBtn.addEventListener('click', () => {
+    searchForm.classList.toggle('show-search');
+});
