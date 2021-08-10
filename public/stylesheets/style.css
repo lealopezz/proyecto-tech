@@ -35,7 +35,12 @@ body{
   flex-grow: 1;
   text-align: center;
   font-size: 1.1em;
-  align-items: center;
+  align-items: center;    
+  text-shadow:0 0 3em currentColor;
+  transition: all 250ms ease-in-out;
+}
+.header-title:hover{
+  text-shadow:0 0 1em currentColor;
 }
 .header-icons{
   display: flex;
