@@ -1,6 +1,19 @@
-id  name    color   price   img
 
+# [Tech Streetwear](URL "https://tech.cleverapps.io/")
 
+## Pautas de entrega Opcionales
+
+* Etiquetas semánticas de HTML
+* Llamada a un JSON interno
+* Muy responsive (😅)
+* Usa Express
+* Usa Express con MySQL
+* Manejo de paquetes
+* Sitio subido a Clever Cloud (Heroku no me tomaba la tarjeta)
+
+#### id  name    color   price   img
+
+``` SQL
 INSERT INTO product VALUES
 (1, 'N1 CARGO', 'BLACK', 60, '/images/pant1.webp'),
 (2, 'N1 CARGO', 'GREEN', 60, '/images/pant2.webp'),
@@ -9,11 +22,13 @@ INSERT INTO product VALUES
 (5, 'C11 CARGO', 'CAMO', 55, '/images/pant5.webp'),
 (6, 'V1 CARGO', 'LIGHTBLUE', 60, '/images/pant6.webp'),
 (7, 'X1 CARGO', 'BLACK', 65, '/images/pant7.webp'),
-(8, 'C50 CARGO', 'BLACK', 70, '/images/pant8.webp');
+(8, 'C50 CARGO', 'BLACK', 70, '/images/pant8.webp');`
+```
 
 
-id  size    stock   productId
+#### id  size    stock   productId
 
+``` SQL
 INSERT INTO size VALUES
 (1, 'S', 15, 1),
 (2, 'M', 15, 1),
@@ -39,3 +54,4 @@ INSERT INTO size VALUES
 (22, 'S', 15, 8),
 (23, 'M', 15, 8),
 (24, 'L', 15, 8);
+```
